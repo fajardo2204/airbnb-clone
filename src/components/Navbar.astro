@@ -1,0 +1,27 @@
+---
+import AirbnbIcon from '../icons/AirbnbLogo.astro'
+---
+
+<header>
+  <!-- Navbar -->
+  <div class="grid grid-cols-3 px-16 w-screen h-20 border-b-2 border-gray-200 items-center">
+    <AirbnbIcon color='var(--primary-color)'/>
+
+    <div class="flex justify-evenly items-center border rounded-full shadow-md h-12 w-96">
+      <button class="border-r-2 text-sm font-medium px-4">Anywhere</button>
+      <button class="border-r-2 text-sm font-medium px-4">Any week</button>
+      <button class="border-r-2 text-sm font-medium text-gray-500 px-4 ">Add guest</button>
+      <i class="fa-solid fa-magnifying-glass bg-red-500 text-white rounded-full p-2"></i>
+    </div>
+
+    <div class="flex justify-end items-center gap-8">
+      <button class="text-sm font-medium text-gray">Airbnb your home</button>
+      <span class="fa-solid fa-globe"></span>
+      <div class="flex justify-evenly items-center gap-2 rounded-full shadow-md h-12 w-24 py-1.25 pr-0.75 pl-2">
+        <i class="fa-solid fa-bars"></i>
+        <button class="bg-gray-900 text-white rounded-full h-8 w-8 text-xl font-semibold">J</button>
+      </div>
+    </div>
+  </div>
+  <!-- Filters -->
+</header>
