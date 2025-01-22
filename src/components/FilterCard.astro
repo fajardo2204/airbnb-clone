@@ -1,12 +1,11 @@
 ---
 interface Props {
-  imgSrc: string;
-  altText: string;
+  imgSrc: string; 
   label: string;
   onClick: () => void;
 }
 
-const { imgSrc, altText, label, onClick } = Astro.props;
+const { imgSrc, label, onClick } = Astro.props;
 ---
 
 <div class="flex items-center h-24 space-x-5">
@@ -15,7 +14,7 @@ const { imgSrc, altText, label, onClick } = Astro.props;
     class="flex flex-col items-center text-gray-400 hover:text-gray-900 gap-2 pl-16"
     on.click={onClick}
     >
-      <img src={imgSrc} alt={altText} class="h-6 w-6">
+      <img src={imgSrc} class="h-6 w-6">
       <p class="text-xs font-normal">{label}</p>
     </div>
   </div>
