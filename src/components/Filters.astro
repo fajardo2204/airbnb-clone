@@ -1,21 +1,38 @@
 ---
 import FilterCard from './FilterCard.astro'
+import ToggleButton from './ToggleButton.astro'
 
 import categories from '../data/categories.json'
+
+function handleToggle(state: boolean) {
+  console.log(state)
+}
 ---
 
-<div class="flex items-center">
-  {categories.map((category) => (
-    <FilterCard
-      imgSrc={category.imgSrc}
-      label={category.label}
-      onClick={() => console.log(category.label)}
-    />
-  ))}
-  
-  <span class="material-symbols-outlined">arrow_circle_right</span>
-  <div>
-    <span class="material-symbols-outlined">tune</span>
-    <p>Filters</p>
+<div class="flex flex-wrap w-screen pt-2 pr-16">
+  <!-- Carrusel de filtros -->
+  <div class="flex justify-between flex-1 min-w-0 overflow-hidden">
+    {categories.map((category) => (
+      <FilterCard
+        imgSrc={category.imgSrc}
+        label={category.label}
+        onClick={() => console.log(category.label)}
+      />
+    ))}
+  </div>
+
+  <i class="fa-solid fa-arrow-right py-5 px-4"></i>
+
+  <div class="flex justify-around items-center h-12 w-24 flex-shrink-0 rounded-xl border border-gray-400 pr-2 mr-3">
+    <span class="material-symbols-outlined pl-2">tune</span>
+    <p class="text-xs font-semibold pl-2">Filters</p>
+  </div>
+
+  <div class="flex justify-start items-center h-12 w-52 flex-shrink-0 rounded-xl border border-gray-400 mr-3">
+    <p class="text-xs font-semibold pl-2">Display total before taxes</p>
+
+    <div>
+      <ToggleButton initialState={false} onToggle={handleToggle} />
+    </div>
   </div>
 </div>
