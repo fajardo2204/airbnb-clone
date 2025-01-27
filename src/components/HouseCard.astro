@@ -1,0 +1,24 @@
+---
+interface Props {
+  imgSrc: string;
+  location: string;
+  distance: string;
+  price: string;
+  stars: number;
+}
+
+const { imgSrc, location, distance, price, stars } = Astro.props;
+---
+
+<div class="grid grid-cols-4">
+  <div class="flex flex-col">
+    <img src={imgSrc} alt="img">
+    <div class="flex">
+      <p>{location}, Colombia</p>
+      <i class="fa-solid fa-star"></i>
+      <p>{stars}</p>
+    </div>    
+    <p>{distance} Kilometers away</p>
+    <p>{price} per night</p>
+  </div>
+</div>

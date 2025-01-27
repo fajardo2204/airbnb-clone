@@ -1,0 +1,65 @@
+[
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/a0e31d5e-9ed0-4ce4-a2b0-dc1693c1afe6.jpg?im_w=960&im_format=avif",
+    "location": "Guasca",
+    "distance": "23",
+    "price": "198465",
+    "stars": 4.54
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/b9fa1404-531b-4bb7-8f93-1b7dafa2df75.jpg?im_w=960&im_format=avif",
+    "location": "La Vega",
+    "distance": "56",
+    "price": "1265000",
+    "stars": 4.93
+  },
+  {
+    "imgSrc": "",
+    "location": "Sasima",
+    "distance": "12",
+    "price": "120000",
+    "stars": 4.56
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/976f1a07-ac34-4044-b10c-9865f1922310.jpg?im_w=960&im_format=avif",
+    "location": "La Calera",
+    "distance": "45",
+    "price": "150000",
+    "stars": 4.83
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/miso/Hosting-949170545795243551/original/98301cf7-3b52-4a33-9b04-176a527d74c2.jpeg?im_w=960&im_format=avif",
+    "location": "Cachipay",
+    "distance": "34",
+    "price": "200000",
+    "stars": 4.78
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/hosting/Hosting-1133994095068317358/original/1134a113-09b8-4ed6-a77e-57a1abe2484a.jpeg?im_w=960&im_format=avif",
+    "location": "Tena",
+    "distance": "67",
+    "price": "250000",
+    "stars": 4.67
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/bb62a11e-0bd0-4583-9a34-c7a136454992.jpg?im_w=960&im_format=avif",
+    "location": "Subachoque",
+    "distance": "23",
+    "price": "300000",
+    "stars": 4.89
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/hosting/Hosting-49277150/original/a9d21655-984a-43a1-a672-97428fdb27f6.jpeg?im_w=960&im_format=avif",
+    "location": "La Calera",
+    "distance": "45",
+    "price": "150000",
+    "stars": 4.83
+  },
+  {
+    "imgSrc": "https://a0.muscache.com/im/pictures/miso/Hosting-1151418745633162221/original/6357d633-083a-4b95-b679-067e77289532.jpeg?im_w=960&im_format=avif",
+    "location": "Silvania",
+    "distance": "56",
+    "price": "1265000",
+    "stars": 4.93
+  }
+]

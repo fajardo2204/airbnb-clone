@@ -1,3 +1,17 @@
 ---
+import HouseCard from "./HouseCard.astro"
 
+import houses from "../data/houses.json"
 ---
+
+<div class="">
+  {houses.map((house) => {
+    <HouseCard 
+      imgSrc={house.imgSrc}
+      location={house.location}
+      distance={house.distance}
+      price={house.price}
+      stars={house.stars}
+    />
+  })}
+</div>
