@@ -4,14 +4,14 @@ import HouseCard from "./HouseCard.astro"
 import houses from "../data/houses.json"
 ---
 
-<div class="">
+<div class="grid grid-cols-4">
   {houses.map((house) => {
-    <HouseCard 
+    return <HouseCard
       imgSrc={house.imgSrc}
       location={house.location}
+      stars={house.stars}
       distance={house.distance}
       price={house.price}
-      stars={house.stars}
     />
   })}
 </div>

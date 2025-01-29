@@ -2,23 +2,32 @@
 interface Props {
   imgSrc: string;
   location: string;
-  distance: string;
-  price: string;
   stars: number;
+  distance: string;
+  price: number;
 }
 
-const { imgSrc, location, distance, price, stars } = Astro.props;
+const { imgSrc, location, stars, distance, price } = Astro.props;
+
+// Price formatting
+function formatPrice(price: number) {
+  return price.toLocaleString('es-CO', {
+    style: 'decimal',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
+};
 ---
 
-<div class="grid grid-cols-4">
-  <div class="flex flex-col">
-    <img src={imgSrc} alt="img">
+<div class="flex flex-col h-96 w-64">
+  <img src={imgSrc} alt="img" class="w-72 h-64 rounded-xl">
+  <div class="flex justify-between mt-2">
+    <p class="text-sm font-bold">{location}, Colombia</p>
     <div class="flex">
-      <p>{location}, Colombia</p>
       <i class="fa-solid fa-star"></i>
-      <p>{stars}</p>
-    </div>    
-    <p>{distance} Kilometers away</p>
-    <p>{price} per night</p>
-  </div>
+      <p class="text-sm font-medium">{stars}</p>
+    </div>
+  </div>    
+  <p class="text-sm text-gray-500">{distance} kilometers away.</p>
+  <p class="font-semibold">${formatPrice(price)}COP night</p>
 </div>
