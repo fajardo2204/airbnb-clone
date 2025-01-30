@@ -9,9 +9,9 @@ function handleToggle(state: boolean) {
 }
 ---
 
-<div class="flex flex-wrap w-screen pt-8 pr-16">
+<div class="flex flex-wrap w-screen pt-4 border-b-2 border-gray-200 items-center">
   <!-- Carrusel de filtros -->
-  <div class="flex justify-between flex-1 min-w-0 overflow-hidden">
+  <div class="flex justify-around flex-1 min-w-0 overflow-hidden pb-2 text-center">
     {categories.map((category) => (
       <FilterCard
         imgSrc={category.imgSrc}
