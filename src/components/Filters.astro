@@ -11,28 +11,34 @@ function handleToggle(state: boolean) {
 
 <div class="flex flex-wrap w-screen pt-4 border-b-2 border-gray-200 items-center">
   <!-- Carrusel de filtros -->
-  <div class="flex justify-around flex-1 min-w-0 overflow-hidden pb-2 text-center">
-    {categories.map((category) => (
-      <FilterCard
-        imgSrc={category.imgSrc}
-        label={category.label}
-        onClick={() => console.log(category.label)}
-      />
-    ))}
+  <div class="w-[80vw]">
+      <div class="flex flex-1 min-w-0 overflow-hidden pb-2 mr-5 text-center">
+      {categories.map((category) => (
+        <FilterCard
+          imgSrc={category.imgSrc}
+          label={category.label}
+          onClick={() => console.log(category.label)}
+        />
+      ))}
+    </div>
   </div>
 
-  <i class="fa-solid fa-arrow-right py-5 px-4"></i>
+  <i class="fa-solid fa-arrow-right py-5 px-4 pt-3"></i>
 
-  <div class="flex justify-around items-center h-12 w-24 flex-shrink-0 rounded-xl border border-gray-400 pr-2 mr-3">
-    <span class="material-symbols-outlined pl-2">tune</span>
-    <p class="text-xs font-semibold pl-2">Filters</p>
+  <div class="pb-3">
+    <div class="flex justify-around items-center h-12 w-24 flex-shrink-0 rounded-xl border border-gray-400 pr-2 mr-3">
+      <span class="material-symbols-outlined pl-2">tune</span>
+      <p class="text-xs font-semibold pl-2">Filters</p>
+    </div>
   </div>
 
-  <div class="flex justify-start items-center h-12 w-52 flex-shrink-0 rounded-xl border border-gray-400 mr-3">
-    <p class="text-xs font-semibold pl-2">Display total before taxes</p>
+  <div class="pb-3">
+    <div class="flex justify-start items-center h-12 w-52 flex-shrink-0 rounded-xl border border-gray-400 mr-3">
+      <p class="text-xs font-semibold pl-2">Display total before taxes</p>
 
-    <div>
-      <ToggleButton initialState={false} onToggle={handleToggle} />
+      <div>
+        <ToggleButton initialState={false} onToggle={handleToggle} />
+      </div>
     </div>
   </div>
 </div>
